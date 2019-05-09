@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(240, 230, 225);
+
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(15, 2, 29);
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 0.2rem rgb(240, 230, 225);
+}
+
+h1:hover {
+  background-color: rgb(75, 67, 83);
+  color: rgb(240, 230, 225);
+  box-shadow: 0 0 0.2rem 0.1rem rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+h1 .faded {
+  color: rgb(75, 67, 83);
+}
+
+h1:hover .faded {
+  color: rgb(141, 141, 141);
+}
+
+a {
+  text-decoration: underline;
+  color: rgb(15, 2, 29);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p#copy-notice {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgb(75, 67, 83);
+  opacity: 0;
+}
+
+h1:hover + p#copy-notice {
+  opacity: 1;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}

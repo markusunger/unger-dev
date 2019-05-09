@@ -1,0 +1,1 @@
+A simple splashpage with mail address and GitHub profile link.
